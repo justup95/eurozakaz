@@ -1,4 +1,66 @@
 // Footer
-footer {
-    display: block;
+.footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  @media (max-width: $breakpoint992) {
+    padding-top: 0;
+  }
+  @media (max-width: $breakpoint768) {
+    padding-bottom: 15px;
+  }
+  @media (max-width: $breakpoint480) {
+    padding-top: 40px;
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+.footer__inner {
+}
+.footer__items-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: auto;
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
+.footer__item {
+  a {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(142, 72, 255, 0.3);
+    @media (max-width: $breakpoint480) {
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(142, 72, 255, 0.3);
+      a {
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(142, 72, 255, 0.3);
+      }
+    }
+  }
+}
+
+.footer__text {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(142, 72, 255, 0.3);
+  @media (max-width: $breakpoint480) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

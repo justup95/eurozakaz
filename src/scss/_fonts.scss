@@ -1,4 +1,31 @@
 @font-face {
-    font-family: '';
-    src: url('') format('');
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Regular.woff2') format('woff2');
+    src: url('../fonts/Comfortaa-Regular.woff') format('woff');
+           font-weight: 400;
+           font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SF-Pro-Text-Light.woff2') format('woff2');
+    src: url('../fonts/SF-Pro-Text-Light.woff') format('woff');
+           font-weight: 300;
+           font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SF-Pro-Text-Regular.woff2') format('woff2');
+    src: url('../fonts/SF-Pro-Text-Regular.woff') format('woff');
+           font-weight: 400;
+           font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fahkwang';
+    src: url('../fonts/Fahkwang-Regular.woff2') format('woff2');
+    src: url('../fonts/Fahkwang-Regular.woff') format('woff');
+           font-weight: 400;
+           font-style: normal;
 }

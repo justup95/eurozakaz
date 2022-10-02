@@ -1,1 +1,40 @@
 // Header
+.header {
+  height: 99px;
+  .container {
+    height: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  @media (max-width: $breakpoint768) {
+    height: 63px;
+    font-size: 25px;
+    line-height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    z-index: 10;
+  }
+}
+
+.logo {
+  align-self: flex-end;
+  margin-bottom: 8px;
+  a {
+    font-family: "Fahkwang";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    color: #1a0738;
+    @media (max-width: $breakpoint480) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+}

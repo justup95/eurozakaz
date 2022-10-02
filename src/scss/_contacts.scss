@@ -1,0 +1,170 @@
+.contacts {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .container {
+    padding: 0 10px;
+  }
+  @media (max-width: $breakpoint992) {
+    position: relative;
+  }
+  @media (max-width: $breakpoint768) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__title {
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 28px;
+  @media (max-width: $breakpoint768) {
+    margin-top: 0;
+    gap: 0;
+  }
+  @media (max-width: $breakpoint480) {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.contacts__ask {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  @media (max-width: $breakpoint480) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+.contacts__logo {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: "Fahkwang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  @media (max-width: $breakpoint992) {
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+  }
+  @media (max-width: $breakpoint480) {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+  }
+}
+
+.contacts__info-wrap {
+  display: flex;
+  gap: 50px;
+  @media (max-width: $breakpoint992) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  @media (max-width: $breakpoint480) {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.contacts__social-wrap-inner {
+  @media (max-width: $breakpoint768) {
+    display: flex;
+  }
+  @media (max-width: $breakpoint480) {
+    justify-content: flex-end;
+  }
+}
+
+.contacts__info {
+  width: 255px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  @media (max-width: $breakpoint768) {
+    width: 200px;
+  }
+  @media (max-width: $breakpoint480) {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__name-wrap {
+}
+
+.contacts__name {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  @media (max-width: $breakpoint480) {
+    line-height: 29px;
+  }
+}
+
+.contacts__mob {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1a0738;
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  @media (max-width: $breakpoint480) {
+    line-height: 29px;
+  }
+}
+
+.contacts__social-wrap {
+  @media (max-width: $breakpoint480) {
+    display: flex;
+    flex-direction: column;
+    .contacts__social-link {
+      align-self: flex-end;
+    }
+  }
+}
+
+.contacts__social-link {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #8e48ff;
+  @media (max-width: $breakpoint480) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

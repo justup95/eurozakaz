@@ -1,0 +1,151 @@
+.hero {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .container {
+    padding: 0 10px;
+  }
+  @media (max-width: $breakpoint768) {
+    padding-top: 30px;
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+.hero__inner {
+  position: relative;
+  display: flex;
+  gap: 110px;
+  @media (max-width: 1100px) {
+    gap: 40px;
+  }
+  @media (max-width: $breakpoint992) {
+    gap: 24px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.hero__img {
+  max-width: 317px;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // object-position: center;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 260px;
+  }
+  @media (max-width: $breakpoint768) {
+    max-width: 190px;
+  }
+  @media (max-width: $breakpoint480) {
+    width: 207px;
+  }
+}
+
+.hero__info {
+  margin-top: auto;
+  @media (max-width: 1150px) {
+    margin-top: 12%;
+  }
+  @media (max-width: $breakpoint768) {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero__title {
+  max-width: 766px;
+  @media (max-width: 1155px) {
+    max-width: 575px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 431px;
+  }
+  @media (max-width: $breakpoint768) {
+    max-width: 768px;
+    text-align: center;
+  }
+  @media (max-width: $breakpoint480) {
+    max-width: 350px;
+  }
+}
+
+.hero__text {
+  font-family: "SF Pro Text";
+  margin-top: 10px;
+  @media (max-width: $breakpoint992) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  @media (max-width: 615px) {
+    margin-top: 5px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.hero__btn {
+  margin-top: 40px;
+}
+
+.hero__list-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 27px;
+  margin-top: 50px;
+  @media (max-width: $breakpoint768) {
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  @media (max-width: $breakpoint480) {
+    border: 2px solid #8e48ff;
+    border-radius: 25px;
+    padding: 15px 10px;
+  }
+}
+
+.hero__list-item {
+  width: 395px;
+  padding: 27px 15px;
+  font-family: "SF Pro Text";
+  border-radius: 40px;
+  align-items: center;
+  text-align: center;
+  color: #1a0738;
+  border: 2px solid #8e48ff;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  @media (max-width: $breakpoint992) {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 15px;
+  }
+  @media (max-width: $breakpoint768) {
+    text-align: center;
+    width: 100%;
+  }
+  @media (max-width: $breakpoint480) {
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
+  }
+}

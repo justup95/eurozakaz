@@ -1,0 +1,157 @@
+.benefits {
+  margin-top: 50px;
+  margin-bottom: 65px;
+  .container {
+    padding: 0 10px;
+  }
+  @media (max-width: 850px) {
+    margin-bottom: 50px;
+    .container {
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: $breakpoint768) {
+    padding: 0;
+    margin-top: 40px;
+    .container {
+      padding: 0 15px;
+    }
+  }
+  @media (max-width: $breakpoint480) {
+    margin-bottom: 60px;
+  }
+}
+
+.benefits__title {
+}
+
+.benefits__list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 40px;
+  @media (max-width: 850px) {
+    gap: 25px;
+  }
+  @media (max-width: $breakpoint768) {
+    margin-top: 20px;
+  }
+  @media (max-width: $breakpoint480) {
+    flex-direction: row;
+    gap: 10px;
+    vertical-align: center;
+  }
+}
+
+.benefits__list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 380px;
+  @media (max-width: 850px) {
+    width: 100%;
+    justify-content: flex-start;
+    align-self: center;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: $breakpoint480) {
+    gap: 7px;
+  }
+}
+
+.benefits__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 120px;
+  border: 2px solid #8e48ff;
+  border-radius: 20px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 72px;
+  color: #8e48ff;
+  flex-shrink: 0;
+  @media (max-width: $breakpoint768) {
+    width: 50px;
+    height: 75px;
+    font-size: 35px;
+    line-height: 31px;
+    border-radius: 15px;
+  }
+  @media (max-width: 520px) {
+    width: 40px;
+  }
+  @media (max-width: $breakpoint480) {
+    width: 30px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 31px;
+    border-radius: 10px;
+    border: 1px solid #8e48ff;
+  }
+}
+
+.benefits__wrap-text {
+    height: 100%;
+}
+
+.benefits__text {
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1a0738;
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  @media (max-width: $breakpoint480) {
+    font-size: 18px;
+    line-height: 21px;
+    br {
+      display: none;
+    }
+  }
+  span {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8e48ff;
+    @media (max-width: $breakpoint768) {
+      font-size: 18px;
+      line-height: 120%;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.benefits__subtitle {
+  margin-top: 130px;
+  @media (max-width: 850px) {
+    margin-top: 60px;
+  }
+}
+
+.benefits__btn {
+  margin-top: 40px;
+  @media (max-width: $breakpoint768) {
+    margin-top: 20px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
